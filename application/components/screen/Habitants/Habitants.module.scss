@@ -1,0 +1,99 @@
+.wrapper {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.mainSection {
+  flex: 1;
+  overflow: auto;
+  position: relative;
+  max-height: 100%;
+}
+
+.filterForm {
+  display: none;
+  column-gap: 15px;
+  grid-template-columns: 1fr 1fr;
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 25px;
+  background-color: #fff;
+  z-index: 5;
+  border: 1px solid #dcdfe6;
+  flex-wrap: wrap;
+  width: 575px;
+  border-radius: 5px;
+  box-shadow: 0 8px 16px 0 rgb(40 40 90 / 9%), 0 3px 6px 0 rgb(0 0 0 / 7%);
+
+  &.active {
+    display: grid;
+  }
+}
+
+.filterButton {
+  margin: 0 !important;
+  max-width: max-content;
+}
+
+.table {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  overflow: auto;
+
+  &>*:first-child {
+    flex: 1;
+  }
+}
+
+.tableWrapper {
+  max-width: 100%;
+  overflow: auto;
+  height: 100%;
+
+  &:hover {
+    scrollbar-color: #4a596a26 #4a596a0d;
+    scrollbar-width: thin;
+  }
+
+  &:hover::-webkit-scrollbar-track {
+    background-color: #4a596a0d;
+  }
+
+  &:hover::-webkit-scrollbar-thumb {
+    background-color: #4a596a26;
+  }
+}
+
+.tableInner {
+  height: 50px;
+  width: 1550px;
+  height: 1000px;
+}
+
+.tableHeader {
+  grid-template-columns: 1fr repeat(6, 3fr) 1fr;
+  height: 60px;
+  min-width: 100%;
+  color: #909399;
+  font-weight: 700;
+  padding: 10px 25px;
+  display: grid;
+  width: max-content;
+  border-bottom: 1px solid #eff2f7;
+  position: sticky;
+  background-color: #fff;
+  top: 0;
+  z-index: 2;
+
+  >*{
+    padding: 10px;
+  }
+
+  button{
+    font-size: inherit;
+    font-weight: inherit;
+  }
+}

@@ -1,0 +1,27 @@
+.wrapper {
+  text-align: center;
+  color: #4a596a;
+  line-height: 1.4;
+  font-size: 24px;
+  font-weight: 700;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+
+  h1 {
+    font-size: 32px;
+    color: #4a596a;
+    text-shadow: 0 0 1px #f3f7fa, 0 0 1px #f3f7fa, 0 0 1px #f3f7fa, 0 0 1px #f3f7fa, 0 0 1px #f3f7fa, 0 0 1px #f3f7fa, 0 0 1px #f3f7fa, 0 1px 2px rgb(0 0 0 / 30%), 0 3px 9px rgb(0 0 0 / 10%);
+    margin-bottom: 20px;
+  }
+}
+
+.smallText {
+  font-size: 18px;
+
+  a {
+    text-decoration: underline;
+  }
+}

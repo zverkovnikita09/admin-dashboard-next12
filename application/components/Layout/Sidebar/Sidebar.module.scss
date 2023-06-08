@@ -1,0 +1,41 @@
+.aside {
+  padding: 35px 20px 15px 50px;
+  width: 260px;
+  font-size: 16px;
+}
+
+.link {
+  display: flex;
+  height: 40px;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+  width: 100%;
+
+  &:hover p:after {
+    transform: scale(100%);
+  }
+
+  &.activeLink {
+    pointer-events: none;
+    color: #5f8fdf;
+  }
+
+  p {
+    position: relative;
+    width: max-content;
+
+    &:after {
+      content: '';
+      height: 1px;
+      width: 100%;
+      transform: scale(0);
+      transform-origin: 0% 50%;
+      background-color: black;
+      position: absolute;
+      bottom: 0;
+      transition: 0.3s ease-out;
+      left: 0;
+    }
+  }
+}

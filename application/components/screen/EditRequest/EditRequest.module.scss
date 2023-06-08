@@ -1,0 +1,52 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  max-height: 100%;
+}
+
+.form {
+  display: flex;
+  overflow: auto;
+  max-height: 100%;
+}
+
+.leftPart {
+  background-color: #fff;
+  flex: 1;
+  padding: 24px 32px;
+  overflow: auto;
+
+  &:hover {
+    scrollbar-color: #4a596a26 #4a596a0d;
+    scrollbar-width: thin;
+  }
+
+  &:hover::-webkit-scrollbar-track {
+    background-color: #4a596a0d;
+  }
+
+  &:hover::-webkit-scrollbar-thumb {
+    background-color: #4a596a26;
+  }
+}
+
+.rightPart {
+  background-color: #fff;
+  width: calc(100% / 3);
+  padding: 24px 32px;
+  overflow: auto;
+  border-left: 1px solid #f2f3f4;
+
+  &:hover {
+    scrollbar-color: #4a596a26 #4a596a0d;
+    scrollbar-width: thin;
+  }
+
+  &:hover::-webkit-scrollbar-track {
+    background-color: #4a596a0d;
+  }
+
+  &:hover::-webkit-scrollbar-thumb {
+    background-color: #4a596a26;
+  }
+}

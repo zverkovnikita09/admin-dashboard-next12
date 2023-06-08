@@ -1,0 +1,14 @@
+.wrapper{
+  display: flex;
+  flex-direction: column;
+  max-height: 100%;
+}
+
+.form {
+  padding: 24px 32px;
+}
+
+.buttonGroup{
+  display: flex;
+  justify-content: space-between;
+}

@@ -1,0 +1,73 @@
+.wrapper {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  box-shadow: 0 8px 16px 0 rgb(40 40 90 / 9%), 0 3px 6px 0 rgb(0 0 0 / 7%);
+  border-radius: 5px;
+}
+
+.contacts {
+  width: 50%;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  background-color: #e2e7ec;
+  overflow: auto;
+
+  &:hover {
+    scrollbar-color: #4a596a26 #4a596a0d;
+    scrollbar-width: thin;
+  }
+
+  &:hover::-webkit-scrollbar-track {
+    background-color: #4a596a0d;
+  }
+
+  &:hover::-webkit-scrollbar-thumb {
+    background-color: #4a596a26;
+  }
+}
+
+.messages {
+  width: 50%;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  overflow: auto;
+}
+
+.contactSearch {
+  position: relative;
+}
+
+.searchIcon {
+  position: absolute;
+  font-size: 18px;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 12px;
+}
+
+.searchInput {
+  height: 55px;
+  padding: 16px;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid #d5d9e0;
+  width: 100%;
+  font-size: 18px;
+  padding-left: 40px;
+
+  &:focus {
+    outline: none;
+  }
+}
+
+.noSelectedMessages{
+  display: grid;
+  flex: 1;
+  place-items: center;
+  font-size: 24px;
+  text-align: center;
+}

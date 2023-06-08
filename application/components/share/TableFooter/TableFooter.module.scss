@@ -1,0 +1,18 @@
+.tableFooter {
+  min-height: 60px;
+  border-top: 1px solid #eff2f7;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 30px;
+}
+
+.footerRight {
+  display: flex;
+  align-items: center;
+}
+
+.count {
+  color: #4a596a;
+  opacity: 0.5;
+  margin-left: 20px;
+}

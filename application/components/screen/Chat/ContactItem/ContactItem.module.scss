@@ -1,0 +1,45 @@
+.wrapper {
+  padding: 16px;
+  display: flex;
+  gap: 16px;
+  border-bottom: 1px solid #d5d9e0;
+  cursor: pointer;
+
+  &.active{
+    pointer-events: none;
+    background-color: #d1d8dd;
+  }
+
+  &:hover {
+    background-color: #d7dfe4;
+  }
+}
+
+.info {
+  display: flex;
+  justify-content: space-between;
+}
+
+.lastMessage {
+  display: -webkit-box;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 20px;
+  max-height: 40px;
+  margin: 10px 0;
+  color: #4a596a;
+  overflow: hidden;
+  -webkit-line-clamp: 2;
+  text-overflow: ellipsis;
+  -webkit-box-orient: vertical;
+  padding-right: 25px;
+}
+
+.main {
+  flex: 1;
+}
+
+.voidChat {
+  font-style: italic;
+  font-weight: 400;
+}

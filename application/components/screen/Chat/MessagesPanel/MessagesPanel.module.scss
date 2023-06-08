@@ -1,0 +1,112 @@
+.header {
+  display: flex;
+  gap: 15px;
+  color: #4a596a;
+  align-items: center;
+  padding: 11px 16px;
+  box-shadow: 0 8px 16px 0 rgb(40 40 90 / 9%), 0 3px 6px 0 rgb(0 0 0 / 7%);
+}
+
+.userName {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.status {
+  color: #cfd3da;
+  display: flex;
+  align-items: center;
+  column-gap: 5px;
+  line-height: 20px;
+
+  &.online {
+    color: #5f8fdf;
+
+    .indicator {
+      border-color: #5f8fdf;
+      background-color: #5f8fdf;
+    }
+  }
+}
+
+.indicator {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  border: 1px solid #cfd3da;
+}
+
+.container {
+  max-height: 100%;
+  flex: 1;
+  padding: 30px 16px 0;
+  overflow-y: auto;
+}
+
+.panel {
+  height: 60px;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  box-shadow: 0 -2px 16px 0 rgb(40 40 90 / 9%);
+}
+
+.addFile {
+  display: grid;
+  place-items: center;
+  font-size: 25px;
+  height: 40px;
+  width: 40px;
+  line-height: 1;
+
+  input {
+    clip: rect(0 0 0 0);
+    border: 0;
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+  }
+}
+
+.typeMessage {
+  padding: 5px;
+  flex: 1;
+
+  input {
+    width: 100%;
+    border: none;
+    font-size: 18px;
+
+    &:focus {
+      outline: none;
+    }
+  }
+}
+
+.send {
+  display: grid;
+  place-items: center;
+  height: 40px;
+  width: 40px;
+}
+
+.cancel {
+  display: grid;
+  place-items: center;
+  height: 40px;
+  width: 40px;
+  font-size: 22px;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.2s, visibility 0s 0.2s;
+
+  &.active {
+    visibility: visible;
+    opacity: 1;
+    transition-delay: 0s;
+  }
+}
